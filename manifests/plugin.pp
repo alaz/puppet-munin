@@ -114,9 +114,6 @@ class munin::plugins::linux inherits munin::plugins::base {
 }
 
 class munin::plugins::debian inherits munin::plugins::base {
-
-	plugin { apt_all: ensure => present; }
-
 }
 
 class munin::plugins::vserver inherits munin::plugins::base {

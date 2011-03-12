@@ -29,8 +29,8 @@ class munin::client {
 
 	case $kernel {
 		linux: {
-			case $vserver {
-				guest: { include munin::plugins::vserver }
+			case $virtual {
+				vserver: { include munin::plugins::vserver }
 				default: {
 					include munin::plugins::linux
 					case $virtual {
